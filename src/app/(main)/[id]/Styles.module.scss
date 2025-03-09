@@ -1,0 +1,101 @@
+.main {
+  padding: 5%;
+    
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .image {
+    max-width: 300px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  li {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .rating,
+  .first-air-date,
+  .episode-run-time,
+  .homepage,
+  .status,
+  .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .homepage a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+
+  .homepage a:hover {
+    text-decoration: underline;
+  }
+
+  .episodes {
+    margin-top: 40px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .season {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+  }
+
+  .seasonImage {
+    max-width: 150px;
+    border-radius: 10px;
+  }
+
+  .seasonDetails {
+    flex: 1;
+  }
+
+  .seasonDetails h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .seasonDetails p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #666;
+  }
+}

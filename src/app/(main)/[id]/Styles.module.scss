@@ -1,5 +1,5 @@
 .main {
-  padding: 5%;
+  padding: 6% 10%;
     
   .container {
     display: flex;
@@ -18,17 +18,20 @@
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--foreground);
+    font-weight: bold;
   }
 
   p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.4rem;
+    line-height: 1.8;
     margin-bottom: 20px;
-    color: #666;
+    color: var(--foreground);
   }
+
+  a {  text-decoration: none;}
 
   ul {
     list-style-type: none;
@@ -38,31 +41,25 @@
 
   li {
     display: inline-block;
-    background-color: #f0f0f0;
-    padding: 5px 10px;
-    margin-right: 10px;
+    background-color: #e0e0e0;
+    padding: 8px 12px;
+    margin: 5px 10px 5px 0;
     border-radius: 5px;
-    font-size: 1rem;
-    color: #333;
-  }
-
-  .rating,
-  .first-air-date,
-  .episode-run-time,
-  .homepage,
-  .status,
-  .tagline {
     font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #333;
+    color: #2b2b2b;
+    font-weight: bold;
   }
 
-  .homepage a {
-    color: #0070f3;
-    text-decoration: none;
+  .first-air-date,
+  .homepage,
+  .status
+ {
+    font-size: 1.4rem;
+    color: var(--foreground);
+    font-weight: bold;
   }
-
-  .homepage a:hover {
+  
+  .homepage:hover {
     text-decoration: underline;
   }
 
@@ -70,12 +67,18 @@
     margin-top: 40px;
     overflow-x: auto;
     white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .episodes::-webkit-scrollbar {
+    display: none;
   }
 
   .season {
     display: inline-block;
     vertical-align: top;
     margin-right: 20px;
+    margin-top: 5px;
   }
 
   .seasonImage {
@@ -83,19 +86,43 @@
     border-radius: 10px;
   }
 
+  .seasonImageContainer {
+    min-height: 230px;
+  }
+
   .seasonDetails {
     flex: 1;
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: var(--foreground);
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+      color: var(--foreground);
+    }
   }
 
-  .seasonDetails h3 {
-    font-size: 1.5rem;
+  .starRating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
-    color: #333;
   }
-
-  .seasonDetails p {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    color: #666;
+  
+  .starFilled {
+    color: gold;
+    font-size: 2.5rem;
+    margin-right: 5px;
+  }
+  
+  .starEmpty {
+    color: #ccc;
+    font-size: 2.5rem;
+    margin-right: 5px;
   }
 }

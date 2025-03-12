@@ -1,11 +1,11 @@
 .main {
-    padding: 5%;
-  }
+    padding: 6% 5% 5% 5%;
   
   .grid {
+    margin-top: 16px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
+    gap: 20px;
   }
   
   .card {
@@ -24,3 +24,24 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #005bb5;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}
